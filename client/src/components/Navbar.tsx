@@ -6,7 +6,7 @@ const Navbar = () => {
   const [loginCheck, setLoginCheck] = useState(false);
 
   const checkLogin = () => {
-    // @ts-expect-error: The following line was written by BootcampSpot so it should funtion properly
+    //@ts-ignore
     if (auth.loggedIn()) {
       setLoginCheck(true);
     }
