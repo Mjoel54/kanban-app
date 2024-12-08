@@ -1,5 +1,5 @@
 -- DROP DATABASE
-DROP DATABASE IF EXISTS kanban_db;
+DROP DATABASE IF EXISTS database_postgresql_mitch;
 
 -- CREATE DATABASE
-CREATE DATABASE kanban_db;
+CREATE DATABASE database_postgresql_mitch;

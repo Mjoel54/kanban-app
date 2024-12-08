@@ -1,5 +1,3 @@
-import { User } from "./models/user.js";
-
 const forceDatabaseRefresh = false;
 
 import dotenv from "dotenv";
@@ -23,16 +21,3 @@ sequelize.sync({ force: forceDatabaseRefresh }).then(() => {
     console.log(`Server is listening on port ${PORT}`);
   });
 });
-
-const seedUsers = async () => {
-  await User.bulkCreate(
-    [
-      { username: "JollyGuru", password: "password" },
-      { username: "SunnyScribe", password: "password" },
-      { username: "RadiantComet", password: "password" },
-    ],
-    { individualHooks: true }
-  );
-};
-
-seedUsers();
